@@ -108,8 +108,7 @@ public final class CookieUtils {
     /**
      * 删除Cookie带cookie域名
      */
-    public static void deleteCookie(HttpServletRequest request, HttpServletResponse response,
-                                    String cookieName) {
+    public static void deleteCookie(HttpServletRequest request, HttpServletResponse response, String cookieName) {
         doSetCookie(request, response, cookieName, "", -1, false);
     }
 
